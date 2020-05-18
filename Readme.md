@@ -13,42 +13,26 @@ Software desarrollado local.
 # Los archivos
 Son los siguientes
 
+
+''' bash
 .
-
 ├── BD esamu
-
 │   ├── Bases de datos eSAMU.md
-
 |   .
-
 |   .
-
 ├── BD llamadas
-
 │   ├── Bases de datos CDR.md
-
 |   .
-
 |   .
-
 ├── Compilador eSAMU
 │   ├── Compilacion BD eSAMU segun reportebase.ipynb
-
 │   └── requesites.txt
-
 ├── Compilador llamadas
-
 │   ├── Complilacion llamadas.ipynb
-
 │   ├── ejecutador llamadas.sh
-
 │   ├── Identificador traspasos.py
-
 │   └── requesites.txt
-
 ├── eSAMU.pkl                 (resultado)
-
 ├── llamadas_contraspaso.pkl  (resultado)
-
 └── Readme.md                 (este archivo)
-
+'''
