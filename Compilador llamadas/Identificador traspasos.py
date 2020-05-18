@@ -51,7 +51,7 @@ BD.loc[BD.index.isin(lista_llamdas_traspasadas)== False, 'Trapaso'] = 'No'
 
 BD.Trapaso.value_counts()
 
-BD.to_pickle('./llamadas_contraspaso.pkl')
+BD.to_pickle('../llamadas_contraspaso.pkl')
 
 print(BD.columns)
 
