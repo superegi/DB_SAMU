@@ -1,0 +1,2109 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0415.1946                               -->
+<workbook original-version='18.1' source-build='2020.2.0 (20202.20.0415.1946)' source-platform='win' version='18.1' xml:base='https://dashboard.ssvq.cl' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <ISO8601DefaultCalendarPref />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://dashboard.ssvq.cl/workbooks/ReporteeSAMU?rev=1.0' id='ReporteeSAMU' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tabla_ambulancia' inline='true' name='sqlproxy.1751e5m0czevl41acjpcg1gys8em' version='18.1'>
+      <repository-location id='tabla_ambulancia' path='/datasources' revision='1.1' />
+      <connection channel='https' class='sqlproxy' dbname='tabla_ambulancia' directory='/dataserver' port='443' server='dashboard.ssvq.cl' server-oauth='' username='' workgroup-auth-mode='prompt'>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <calculations>
+          <calculation column='[Number of Records]' formula='1' />
+        </calculations>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Base Ambulancia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Base Ambulancia]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Base Ambulancia</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chofer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Chofer]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Chofer</remote-alias>
+            <ordinal>18</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Doctor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Doctor]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Doctor</remote-alias>
+            <ordinal>21</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Enfermero</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Enfermero]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Enfermero</remote-alias>
+            <ordinal>20</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Id Incidente</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id Incidente]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Id Incidente</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Km Recorrido</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Km Recorrido]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Km Recorrido</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil Agregado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil Agregado]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil Agregado</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil Camilla Retenida</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil Camilla Retenida]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil Camilla Retenida</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil Despachado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil Despachado]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil Despachado</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil Finalizado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil Finalizado]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil Finalizado</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil LLegada Lugar</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil LLegada Lugar]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil LLegada Lugar</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil Llegada a Base</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil Llegada a Base]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil Llegada a Base</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil Llegada a CA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil Llegada a CA]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil Llegada a CA</remote-alias>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil Recepción Paciente</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil Recepción Paciente]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil Recepción Paciente</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil Salida</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil Salida]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil Salida</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil Vuelta a Base</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil Vuelta a Base]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil Vuelta a Base</remote-alias>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil en Traslado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil en Traslado]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil en Traslado</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>24</ordinal>
+            <layered>true</layered>
+            <caption>Número de registros</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;1&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Paciente</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Paciente]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Paciente</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Paramédico</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Paramédico]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Paramédico</remote-alias>
+            <ordinal>19</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tipo Despachado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tipo Despachado]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Tipo Despachado</remote-alias>
+            <ordinal>16</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tipo Requerido</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tipo Requerido]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Tipo Requerido</remote-alias>
+            <ordinal>15</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_EXTRACT_RANGES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource :source-version='18.1' formatted-name='tabla_ambulancia' inline='true' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='tabla_ambulancia' path='/datasources' revision='1.1' />
+  <connection channel='https' class='sqlproxy' dbname='tabla_ambulancia' directory='/dataserver' port='443' server='dashboard.ssvq.cl'>
+    <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+    <cols>
+      <map key='[Base Ambulancia]' value='[sqlproxy].[Base Ambulancia]' />
+      <map key='[Chofer]' value='[sqlproxy].[Chofer]' />
+      <map key='[Doctor]' value='[sqlproxy].[Doctor]' />
+      <map key='[Enfermero]' value='[sqlproxy].[Enfermero]' />
+      <map key='[Id Incidente]' value='[sqlproxy].[Id Incidente]' />
+      <map key='[Km Recorrido]' value='[sqlproxy].[Km Recorrido]' />
+      <map key='[Movil Agregado]' value='[sqlproxy].[Movil Agregado]' />
+      <map key='[Movil Camilla Retenida]' value='[sqlproxy].[Movil Camilla Retenida]' />
+      <map key='[Movil Despachado]' value='[sqlproxy].[Movil Despachado]' />
+      <map key='[Movil Finalizado]' value='[sqlproxy].[Movil Finalizado]' />
+      <map key='[Movil LLegada Lugar]' value='[sqlproxy].[Movil LLegada Lugar]' />
+      <map key='[Movil Llegada a Base]' value='[sqlproxy].[Movil Llegada a Base]' />
+      <map key='[Movil Llegada a CA]' value='[sqlproxy].[Movil Llegada a CA]' />
+      <map key='[Movil Recepción Paciente]' value='[sqlproxy].[Movil Recepción Paciente]' />
+      <map key='[Movil Salida]' value='[sqlproxy].[Movil Salida]' />
+      <map key='[Movil Vuelta a Base]' value='[sqlproxy].[Movil Vuelta a Base]' />
+      <map key='[Movil en Traslado]' value='[sqlproxy].[Movil en Traslado]' />
+      <map key='[Movil]' value='[sqlproxy].[Movil]' />
+      <map key='[Number of Records]' value='[sqlproxy].[Number of Records]' />
+      <map key='[Paciente]' value='[sqlproxy].[Paciente]' />
+      <map key='[Paramédico]' value='[sqlproxy].[Paramédico]' />
+      <map key='[Tipo Despachado]' value='[sqlproxy].[Tipo Despachado]' />
+      <map key='[Tipo Requerido]' value='[sqlproxy].[Tipo Requerido]' />
+    </cols>
+  </connection>
+  <column aggregation='Sum' datatype='integer' default-type='quantitative' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <layout dim-ordering='alphabetic' dim-percentage='0.751889' measure-ordering='alphabetic' measure-percentage='0.248111' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;Chile&quot;' />
+  </semantic-values>
+  <date-options start-of-week='monday' />
+</datasource>
+]]>&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;<![CDATA[<dialect-definition>
+  <primary-dialect class='hyper' version='0.0.0'>
+  </primary-dialect>
+</dialect-definition>
+]]>&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>true</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+              <attribute datatype='string' name='update-time'>&quot;5/28/2020 5:29:42 AM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='monday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Base Ambulancia]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Chofer]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Doctor]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Enfermero]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Id Incidente]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Km Recorrido]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Agregado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Camilla Retenida]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Despachado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Finalizado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil LLegada Lugar]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Llegada a Base]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Llegada a CA]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Recepción Paciente]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Salida]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Vuelta a Base]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil en Traslado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Paciente]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Paramédico]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Tipo Despachado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Tipo Requerido]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <_.fcp.ObjectModelTableType.true...column caption='Datos migrados' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Chile&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Datos migrados' id='Migrated Data'>
+            <properties context=''>
+              <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='tabla_paciente' inline='true' name='sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r' version='18.1'>
+      <repository-location id='tabla_paciente' path='/datasources' revision='1.1' />
+      <connection channel='https' class='sqlproxy' dbname='tabla_paciente' directory='/dataserver' port='443' server='dashboard.ssvq.cl' server-oauth='' username='' workgroup-auth-mode='prompt'>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <calculations>
+          <calculation column='[Number of Records]' formula='1' />
+        </calculations>
+        <metadata-records>
+          <metadata-record class='measure'>
+            <remote-name>Atenciones Previas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Atenciones Previas]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Atenciones Previas</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Descripcion Intervencion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Descripcion Intervencion]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Descripcion Intervencion</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diagnostico Intervencion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Diagnostico Intervencion]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Diagnostico Intervencion</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Edad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Edad]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Edad</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Género</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Género]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Género</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Id Incidente</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id Incidente]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Id Incidente</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Llamada adhoc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Llamada adhoc]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Llamada adhoc</remote-alias>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movil</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Movil]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Movil</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <caption>Número de registros</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;1&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Obs Regulacion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Obs Regulacion]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Obs Regulacion</remote-alias>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patología Centinela</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patología Centinela]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Patología Centinela</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resultado Atención</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Resultado Atención]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Resultado Atención</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tipo traslado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tipo traslado]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Tipo traslado</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fullname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fullname]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>fullname</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>identificationNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[identificationNumber]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>identificationNumber</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>identificationType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[identificationType]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>identificationType</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_EXTRACT_RANGES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource :source-version='18.1' formatted-name='tabla_paciente' inline='true' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='tabla_paciente' path='/datasources' revision='1.1' />
+  <connection channel='https' class='sqlproxy' dbname='tabla_paciente' directory='/dataserver' port='443' server='dashboard.ssvq.cl'>
+    <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+    <cols>
+      <map key='[Atenciones Previas]' value='[sqlproxy].[Atenciones Previas]' />
+      <map key='[Descripcion Intervencion]' value='[sqlproxy].[Descripcion Intervencion]' />
+      <map key='[Diagnostico Intervencion]' value='[sqlproxy].[Diagnostico Intervencion]' />
+      <map key='[Edad]' value='[sqlproxy].[Edad]' />
+      <map key='[Género]' value='[sqlproxy].[Género]' />
+      <map key='[Id Incidente]' value='[sqlproxy].[Id Incidente]' />
+      <map key='[Llamada adhoc]' value='[sqlproxy].[Llamada adhoc]' />
+      <map key='[Movil]' value='[sqlproxy].[Movil]' />
+      <map key='[Number of Records]' value='[sqlproxy].[Number of Records]' />
+      <map key='[Obs Regulacion]' value='[sqlproxy].[Obs Regulacion]' />
+      <map key='[Patología Centinela]' value='[sqlproxy].[Patología Centinela]' />
+      <map key='[Resultado Atención]' value='[sqlproxy].[Resultado Atención]' />
+      <map key='[Tipo traslado]' value='[sqlproxy].[Tipo traslado]' />
+      <map key='[fullname]' value='[sqlproxy].[fullname]' />
+      <map key='[identificationNumber]' value='[sqlproxy].[identificationNumber]' />
+      <map key='[identificationType]' value='[sqlproxy].[identificationType]' />
+    </cols>
+  </connection>
+  <column aggregation='Sum' datatype='integer' default-type='quantitative' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <layout dim-ordering='alphabetic' dim-percentage='0.633501' measure-ordering='alphabetic' measure-percentage='0.366499' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;Chile&quot;' />
+  </semantic-values>
+  <date-options start-of-week='monday' />
+</datasource>
+]]>&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;<![CDATA[<dialect-definition>
+  <primary-dialect class='hyper' version='0.0.0'>
+  </primary-dialect>
+</dialect-definition>
+]]>&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>true</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+              <attribute datatype='string' name='update-time'>&quot;5/28/2020 5:01:37 AM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='monday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Atenciones Previas]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Descripcion Intervencion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Diagnostico Intervencion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Edad]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Género]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[Id Incidente]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Llamada adhoc]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Obs Regulacion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Patología Centinela]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Resultado Atención]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Tipo traslado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <_.fcp.ObjectModelTableType.true...column caption='Datos migrados' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[fullname]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[identificationNumber]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[identificationType]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Chile&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Datos migrados' id='Migrated Data'>
+            <properties context=''>
+              <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='tabla_rem' inline='true' name='sqlproxy.1prdycp0t24uhb12wcco91j49w9a' version='18.1'>
+      <repository-location id='tabla_rem_15868789202130' path='/datasources' revision='1.1' />
+      <connection channel='https' class='sqlproxy' dbname='tabla_rem_15868789202130' directory='/dataserver' port='443' server='dashboard.ssvq.cl' server-oauth='' username='' workgroup-auth-mode='prompt'>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <calculations>
+          <calculation column='[Number of Records]' formula='1' />
+        </calculations>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Abierto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Abierto]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Abierto</remote-alias>
+            <ordinal>15</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Atendida</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Atendida]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Atendida</remote-alias>
+            <ordinal>19</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Completado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Completado]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Completado</remote-alias>
+            <ordinal>20</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comuna</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Comuna]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Comuna</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Descripción</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Descripción]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Descripción</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dirección</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dirección]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Dirección</remote-alias>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>En Curso</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[En Curso]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>En Curso</remote-alias>
+            <ordinal>18</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>En Despacho</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[En Despacho]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>En Despacho</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>En Regulación</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[En Regulación]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>En Regulación</remote-alias>
+            <ordinal>16</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Estado]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Estado</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fecha</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fecha]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Fecha</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Id Incidente</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id Incidente]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Id Incidente</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Latitud]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Latitud</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Longitud]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Longitud</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Motivo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Motivo]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Motivo</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nombre Vehículo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nombre Vehículo]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Nombre Vehículo</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>24</ordinal>
+            <layered>true</layered>
+            <caption>Número de registros</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;1&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Paciente</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Paciente]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Paciente</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prioridad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Prioridad]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Prioridad</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Región</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Región]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Región</remote-alias>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regulado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Regulado]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Regulado</remote-alias>
+            <ordinal>21</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sector]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Sector</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Submotivo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Submotivo]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Submotivo</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <family>Consulta SQL personalizada</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sqlproxy]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_EXTRACT_RANGES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource :source-version='18.1' formatted-name='tabla_rem' inline='true' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='tabla_rem_15868789202130' path='/datasources' revision='1.1' />
+  <connection channel='https' class='sqlproxy' dbname='tabla_rem_15868789202130' directory='/dataserver' port='443' server='dashboard.ssvq.cl'>
+    <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+    <cols>
+      <map key='[Abierto]' value='[sqlproxy].[Abierto]' />
+      <map key='[Atendida]' value='[sqlproxy].[Atendida]' />
+      <map key='[Completado]' value='[sqlproxy].[Completado]' />
+      <map key='[Comuna]' value='[sqlproxy].[Comuna]' />
+      <map key='[Descripción]' value='[sqlproxy].[Descripción]' />
+      <map key='[Dirección]' value='[sqlproxy].[Dirección]' />
+      <map key='[En Curso]' value='[sqlproxy].[En Curso]' />
+      <map key='[En Despacho]' value='[sqlproxy].[En Despacho]' />
+      <map key='[En Regulación]' value='[sqlproxy].[En Regulación]' />
+      <map key='[Estado]' value='[sqlproxy].[Estado]' />
+      <map key='[Fecha]' value='[sqlproxy].[Fecha]' />
+      <map key='[Id Incidente]' value='[sqlproxy].[Id Incidente]' />
+      <map key='[Latitud]' value='[sqlproxy].[Latitud]' />
+      <map key='[Longitud]' value='[sqlproxy].[Longitud]' />
+      <map key='[Motivo]' value='[sqlproxy].[Motivo]' />
+      <map key='[Nombre Vehículo]' value='[sqlproxy].[Nombre Vehículo]' />
+      <map key='[Number of Records]' value='[sqlproxy].[Number of Records]' />
+      <map key='[Paciente]' value='[sqlproxy].[Paciente]' />
+      <map key='[Prioridad]' value='[sqlproxy].[Prioridad]' />
+      <map key='[Región]' value='[sqlproxy].[Región]' />
+      <map key='[Regulado]' value='[sqlproxy].[Regulado]' />
+      <map key='[Sector]' value='[sqlproxy].[Sector]' />
+      <map key='[Submotivo]' value='[sqlproxy].[Submotivo]' />
+    </cols>
+  </connection>
+  <column aggregation='Count' datatype='string' default-type='nominal' name='[Estado]' pivot='key' role='dimension' semantic-role='[State].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' datatype='integer' default-type='quantitative' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <layout dim-ordering='alphabetic' dim-percentage='0.732212' measure-ordering='alphabetic' measure-percentage='0.267788' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;Chile&quot;' />
+  </semantic-values>
+  <date-options start-of-week='monday' />
+</datasource>
+]]>&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;<![CDATA[<dialect-definition>
+  <primary-dialect class='hyper' version='0.0.0'>
+  </primary-dialect>
+</dialect-definition>
+]]>&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>true</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+              <attribute datatype='string' name='update-time'>&quot;5/28/2020 5:02:07 AM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='monday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Abierto]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Atendida]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Completado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Comuna]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Descripción]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Dirección]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[En Curso]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[En Despacho]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[En Regulación]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Estado]' pivot='key' role='dimension' semantic-role='[State].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='CountD' datatype='string' default-type='nominal' layered='true' name='[Fecha]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[Id Incidente]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Latitud]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Longitud]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Motivo]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Nombre Vehículo]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Paciente]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Prioridad]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Región]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Regulado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Sector]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Submotivo]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <_.fcp.ObjectModelTableType.true...column caption='Datos migrados' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Chile&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Datos migrados' id='Migrated Data'>
+            <properties context=''>
+              <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Tab_REM'>
+      <repository-location derived-from='https://dashboard.ssvq.cl/workbooks/ReporteeSAMU/Tab_REM?rev=' id='2693' path='/workbooks/ReporteeSAMU' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tabla_rem' name='sqlproxy.1prdycp0t24uhb12wcco91j49w9a' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.1prdycp0t24uhb12wcco91j49w9a'>
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Abierto]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Atendida]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Completado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Comuna]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Descripción]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Dirección]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[En Curso]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[En Despacho]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[En Regulación]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Estado]' pivot='key' role='dimension' semantic-role='[State].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='CountD' datatype='string' default-type='nominal' layered='true' name='[Fecha]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[Id Incidente]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Latitud]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Longitud]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Motivo]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Nombre Vehículo]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Paciente]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Prioridad]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Región]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Regulado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Sector]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Submotivo]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Abierto]' derivation='None' name='[none:Abierto:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Atendida]' derivation='None' name='[none:Atendida:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Completado]' derivation='None' name='[none:Completado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Comuna]' derivation='None' name='[none:Comuna:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Descripción]' derivation='None' name='[none:Descripción:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dirección]' derivation='None' name='[none:Dirección:nk]' pivot='key' type='nominal' />
+            <column-instance column='[En Curso]' derivation='None' name='[none:En Curso:nk]' pivot='key' type='nominal' />
+            <column-instance column='[En Despacho]' derivation='None' name='[none:En Despacho:nk]' pivot='key' type='nominal' />
+            <column-instance column='[En Regulación]' derivation='None' name='[none:En Regulación:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Estado]' derivation='None' name='[none:Estado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fecha]' derivation='None' name='[none:Fecha:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Id Incidente]' derivation='None' name='[none:Id Incidente:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Id Incidente]' derivation='None' name='[none:Id Incidente:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Latitud]' derivation='None' name='[none:Latitud:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Longitud]' derivation='None' name='[none:Longitud:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Motivo]' derivation='None' name='[none:Motivo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Nombre Vehículo]' derivation='None' name='[none:Nombre Vehículo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Paciente]' derivation='None' name='[none:Paciente:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Prioridad]' derivation='None' name='[none:Prioridad:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Región]' derivation='None' name='[none:Región:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Regulado]' derivation='None' name='[none:Regulado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sector]' derivation='None' name='[none:Sector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Submotivo]' derivation='None' name='[none:Submotivo:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Id Incidente:qk]' included-values='in-range-or-null'>
+            <min>123835</min>
+            <max>123900</max>
+          </filter>
+          <slices>
+            <column>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Id Incidente:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Id Incidente:ok] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Fecha:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Estado:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Abierto:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:En Regulación:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Regulado:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:En Despacho:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:En Curso:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Atendida:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Completado:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Región:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Comuna:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Dirección:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Sector:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Latitud:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Longitud:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Motivo:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Submotivo:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Prioridad:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Descripción:nk] / ([sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Nombre Vehículo:nk] / [sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Paciente:nk])))))))))))))))))))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{9CD6F7E2-D67D-48A5-88F7-7B7F5545C032}' />
+    </worksheet>
+    <worksheet name='Tab_ambul'>
+      <repository-location derived-from='https://dashboard.ssvq.cl/workbooks/ReporteeSAMU/Tab_ambul?rev=' id='2694' path='/workbooks/ReporteeSAMU' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tabla_ambulancia' name='sqlproxy.1751e5m0czevl41acjpcg1gys8em' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.1751e5m0czevl41acjpcg1gys8em'>
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Base Ambulancia]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Chofer]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Doctor]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Enfermero]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Id Incidente]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Km Recorrido]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Agregado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Camilla Retenida]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Despachado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Finalizado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil LLegada Lugar]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Llegada a Base]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Llegada a CA]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Recepción Paciente]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Salida]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil Vuelta a Base]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil en Traslado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Paciente]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Paramédico]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Tipo Despachado]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Tipo Requerido]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Base Ambulancia]' derivation='None' name='[none:Base Ambulancia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Chofer]' derivation='None' name='[none:Chofer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Doctor]' derivation='None' name='[none:Doctor:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Enfermero]' derivation='None' name='[none:Enfermero:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Id Incidente]' derivation='None' name='[none:Id Incidente:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Id Incidente]' derivation='None' name='[none:Id Incidente:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Km Recorrido]' derivation='None' name='[none:Km Recorrido:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil Agregado]' derivation='None' name='[none:Movil Agregado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil Camilla Retenida]' derivation='None' name='[none:Movil Camilla Retenida:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil Despachado]' derivation='None' name='[none:Movil Despachado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil Finalizado]' derivation='None' name='[none:Movil Finalizado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil LLegada Lugar]' derivation='None' name='[none:Movil LLegada Lugar:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil Llegada a Base]' derivation='None' name='[none:Movil Llegada a Base:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil Llegada a CA]' derivation='None' name='[none:Movil Llegada a CA:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil Recepción Paciente]' derivation='None' name='[none:Movil Recepción Paciente:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil Salida]' derivation='None' name='[none:Movil Salida:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil Vuelta a Base]' derivation='None' name='[none:Movil Vuelta a Base:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil en Traslado]' derivation='None' name='[none:Movil en Traslado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil]' derivation='None' name='[none:Movil:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Paciente]' derivation='None' name='[none:Paciente:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Paramédico]' derivation='None' name='[none:Paramédico:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tipo Despachado]' derivation='None' name='[none:Tipo Despachado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tipo Requerido]' derivation='None' name='[none:Tipo Requerido:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Id Incidente:qk]' included-values='in-range'>
+            <min>124145</min>
+            <max>124200</max>
+          </filter>
+          <slices>
+            <column>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Id Incidente:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Id Incidente:ok] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Base Ambulancia:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Paciente:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Km Recorrido:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Tipo Despachado:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Tipo Requerido:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Chofer:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Paramédico:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Enfermero:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Doctor:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil Agregado:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil Camilla Retenida:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil Despachado:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil en Traslado:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil Finalizado:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil Llegada a Base:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil Llegada a CA:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil LLegada Lugar:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil Recepción Paciente:nk] / ([sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil Salida:nk] / [sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil Vuelta a Base:nk])))))))))))))))))))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{87AAE36E-9F51-40CC-8D56-94808277925D}' />
+    </worksheet>
+    <worksheet name='Tab_paciente'>
+      <repository-location derived-from='https://dashboard.ssvq.cl/workbooks/ReporteeSAMU/Tab_paciente?rev=' id='2695' path='/workbooks/ReporteeSAMU' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tabla_paciente' name='sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r'>
+            <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Atenciones Previas]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Descripcion Intervencion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Diagnostico Intervencion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Edad]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Género]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' datatype='integer' default-type='ordinal' layered='true' name='[Id Incidente]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Llamada adhoc]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Movil]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Obs Regulacion]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Patología Centinela]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Resultado Atención]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Atenciones Previas]' derivation='Attribute' name='[attr:Atenciones Previas:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[fullname]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[identificationNumber]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[identificationType]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Descripcion Intervencion]' derivation='None' name='[none:Descripcion Intervencion:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diagnostico Intervencion]' derivation='None' name='[none:Diagnostico Intervencion:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Edad]' derivation='None' name='[none:Edad:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Género]' derivation='None' name='[none:Género:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Id Incidente]' derivation='None' name='[none:Id Incidente:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Id Incidente]' derivation='None' name='[none:Id Incidente:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Llamada adhoc]' derivation='None' name='[none:Llamada adhoc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Movil]' derivation='None' name='[none:Movil:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Obs Regulacion]' derivation='None' name='[none:Obs Regulacion:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Patología Centinela]' derivation='None' name='[none:Patología Centinela:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Resultado Atención]' derivation='None' name='[none:Resultado Atención:nk]' pivot='key' type='nominal' />
+            <column-instance column='[fullname]' derivation='None' name='[none:fullname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[identificationNumber]' derivation='None' name='[none:identificationNumber:nk]' pivot='key' type='nominal' />
+            <column-instance column='[identificationType]' derivation='None' name='[none:identificationType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Id Incidente:qk]' included-values='in-range'>
+            <min>137558</min>
+            <max>137600</max>
+          </filter>
+          <slices>
+            <column>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Id Incidente:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Id Incidente:ok] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:fullname:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Género:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Edad:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:identificationType:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:identificationNumber:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[attr:Atenciones Previas:ok] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Resultado Atención:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Patología Centinela:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Movil:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Obs Regulacion:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Descripcion Intervencion:nk] / ([sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Diagnostico Intervencion:nk] / [sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Llamada adhoc:nk])))))))))))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C9597B21-FF1C-4A6B-9C3E-9410BA55BE2F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Historia 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Resporte eSAMU</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://dashboard.ssvq.cl/workbooks/ReporteeSAMU/Historia1?rev=' id='2696' path='/workbooks/ReporteeSAMU' revision='' />
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3423' id='3' w='98426' x='787' y='830' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='98426' x='787' y='4253' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='84440' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='REM' captured-sheet='Tab_REM' id='1' />
+                  <story-point caption='Ambulancia' captured-sheet='Tab_ambul' id='2' />
+                  <story-point caption='Paciente' captured-sheet='Tab_paciente' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{5C9C9B04-D20E-4BD3-9B0C-281696772FA5}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='Tab_REM'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='marks' />
+            <card type='filters' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='300'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card param='[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Id Incidente:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Abierto:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Atendida:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Completado:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Descripción:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:En Curso:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:En Despacho:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:En Regulación:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Estado:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Fecha - División 1:qk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Fecha:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Id Incidente:ok]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Id Incidente:qk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Prioridad:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Región:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Regulado:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Sector:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[none:Submotivo:nk]</field>
+            <field>[sqlproxy.1prdycp0t24uhb12wcco91j49w9a].[yr:Fecha - División 1:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{03DB3382-32DC-46C6-AAF6-E0F8C2360DC4}' />
+    </window>
+    <window class='worksheet' name='Tab_ambul'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card param='[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Id Incidente:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Base Ambulancia:nk]</field>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Doctor:nk]</field>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Enfermero:nk]</field>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Id Incidente:ok]</field>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Id Incidente:qk]</field>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Km Recorrido:nk]</field>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Movil:nk]</field>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Paciente:nk]</field>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Tipo Despachado:nk]</field>
+            <field>[sqlproxy.1751e5m0czevl41acjpcg1gys8em].[none:Tipo Requerido:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9EBC3A9D-967C-4A62-AA09-5F5DD72CBF83}' />
+    </window>
+    <window class='worksheet' name='Tab_paciente'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='marks' />
+            <card type='filters' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card param='[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Id Incidente:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[attr:Atenciones Previas:ok]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Descripcion Intervencion:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Diagnostico Intervencion:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Edad:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Género:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Id Incidente:ok]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Id Incidente:qk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Llamada adhoc:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Movil:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Obs Regulacion:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Patología Centinela:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Resultado Atención:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:Tipo traslado:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:fullname:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:identificationNumber:nk]</field>
+            <field>[sqlproxy.0gzikny1x8e2tc1ahjl8b1uwfl3r].[none:identificationType:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{81FAD573-0BBC-445D-B633-AAD208E4647F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Historia 1'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{37E2BE88-9915-43AD-9C72-FC64576E7D93}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Historia 1' width='192'>
+      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
+      TCZDOjVAtgaKy8vAQIR8sUIwOY7TbNLxuwjGB9C0LIODKVY3K3dEVso1PO11Gg2DeivEgbCP
+      jtnhWqaMWswxO30AXVPJzC/QsMZJJaIUKnWo1IkcPvyxNBcBt45arZDJuWjkauhahpgLLAZR
+      dv2SS95+ydv2FqhRKXB1boloNEql0WIo6sXhT2A1tgglhlhdXubw1CQLKzlOzM7Q7WQ7rVFl
+      eS3L8MgwtUaLsZFBcpllWniw1Crh5DCxgIuF5TVG02PU6io+xaJQaxH1K4QSw2A1AQ+BgBer
+      1QKPm1ajTi5fJpUIoekdYrEQjUaThmbQ1qr4wzEatSbJgTDlmk7QZW37DmC1WuB1U6/UqVVL
+      xCIJXF4XW6Xe/seRvP2Td8cEEAkW7IRIsGBrepZgQxmg4/Vy9vFH8Ha5KdtzCS7lWcoVGBsZ
+      RjM6uNpNmrpFNB6nkC/gAuLDCep1nc21JUbHD2C0nfgVk1yxTtjnYnB0HLfiuK0+JZqi1Wwy
+      ORJANRPkM9eIDY5xMJ3k0tUlpiaGuHJlnlOPnqaez7G0voXXYeD0RTg2M3XHePcqb6+lUMZ7
+      q747nhQPoHh8FLdyeOgQH5kk6IFirU67peHyRohH3WRXNmm1SviHDpMI7CzBlt4CfxRfp0VN
+      M6BtMpyKUNe9YKqkBuKUKzWc/hgBV5ug10NiNI2u1gkH/eRLVUaHbw28Vi4SGxwll81h6k1w
+      OGm3O5jqBh1XmMzqJtVGCU0zSCbjWHqTxZV1XC4Fv6NOkxDVSoVEPHpbfa62idfjYjSdolF3
+      EvBZ5AslFG8Iv1fB63bjj8bQq0VMFAZSQzSqJTqKh9RHHkSx13l6XUV3mGiNEqpuUcyWKeo6
+      LrNFNJnYdTdTxnurvp4l+Njx4yzcmOPIsSP3XIKhw9rKMrF4nLrWJh4JAA4wq1xdrHBkKk2n
+      Y7BVVgl5wELBaDvwYoA3RLNavO0d4Lf1pcfS1FUdh9GgaSm4MUiNTuBqt7ixsEwkEqZabXBo
+      eprq1jpl1SIedOPwhvG62jfr2+u8vZZCGe+t+kSCBVsjEizYmp4l2JWaZfHCL/jiP/3XxH07
+      35VJJ1jy+jWv506wMxgiPTnV9Y8fkE6w5PVtXs8SfPTYDGqzTTza/VGX0gmWvH7NEwkWbI1I
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
