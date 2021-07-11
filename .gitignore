@@ -2,7 +2,10 @@
 *.pkl
 *xlsx
 *.xls
+*.Rhistory
+*.tar.bz2
+*.twb
 
-
-.spyprojet
+.spyproject
 .ipynb_checkpoints
+__pycache__
