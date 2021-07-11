@@ -1,4 +1,8 @@
 *.csv
 *.pkl
-.ipynb_checkpoints
+*xlsx
 *.xls
+
+
+.spyprojet
+.ipynb_checkpoints
